@@ -29,5 +29,7 @@ while True:
                 break
     except:
            print("Input Error")
-           
-print(num_range["First_set"])
+
+link = (num_range.values())
+toprint = [input_number in num_range.items()]
+print(toprint)
