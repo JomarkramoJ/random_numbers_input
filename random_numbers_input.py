@@ -9,8 +9,7 @@ while True:
     try:
         input_number = int(input("Please enter any random number ranging from 1 to 50: "))
         if input_number >= 1 and input_number <= 10:
-                num_range = {"First_set": input_number}
-                num_range["First_set"] = input_number
+                num_range["First_set"].append(input_number)
                 continue
         elif input_number >= 11 and input_number <= 20:
                 num_range = {"Second_set": input_number}
@@ -30,6 +29,5 @@ while True:
     except:
            print("Input Error")
 
-link = (num_range.values())
-toprint = [input_number in num_range.items()]
-print(toprint)
+for set_name, numbers in num_range.items():
+    print(set_name + ":", *numbers, sep=", ")
