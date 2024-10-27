@@ -6,6 +6,7 @@ while True:
         input_number = int(input("Please enter any random number ranging from 1 to 50: "))
         if input_number >= 1 and input_number <= 10:
                 num_range = {"First_set": input_number}
+                num_range["First_set"] = input_number
                 continue
         elif input_number >= 11 and input_number <= 20:
                 num_range = {"Second_set": input_number}
@@ -22,4 +23,4 @@ while True:
         else:
                 break
 
-print(input_number)
+print(num_range)
