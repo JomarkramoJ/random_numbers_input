@@ -3,7 +3,7 @@
 
 num_range = {
         "First_set": [],
-        
+
 }
 while True:
     try:
@@ -12,17 +12,16 @@ while True:
                 num_range["First_set"].append(input_number)
                 continue
         elif input_number >= 11 and input_number <= 20:
-                num_range = {"Second_set": input_number}
-                num_range["Second_set"] = input_number
+                num_range["Second_set"].append(input_number)
                 continue
         elif input_number >= 21 and input_number <= 30:
-                num_range = {"Third_set": input_number}
+                num_range["Third_set"].append(input_number)
                 continue
         elif input_number >= 31 and input_number <= 40:
-                num_range = {"Fourth_set": input_number}
+                num_range["Fourth_set"].append(input_number)
                 continue
         elif input_number >= 41 and input_number <= 50:
-                num_range = {"Fifth_set": input_number}
+                num_range["Fifth.set"].append(input_number)
                 continue
         else:
                 break
