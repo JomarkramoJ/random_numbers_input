@@ -1,10 +1,12 @@
-#make 5 set of numbers from 1 to 50 by 10ths and collect them into a dictionary array then ask user for input of random numbers
-#Print all numbers inputed by user to different set of numbers when input turns invalid
-
+#Dictionary to store all variables
 num_range = {
         "First_set": [],
-
+        "Second_set": [],
+        "Third_set": [],
+        "Fourth_set": [],
+        "Fifth_set": [],
 }
+#Main code
 while True:
     try:
         input_number = int(input("Please enter any random number ranging from 1 to 50: "))
@@ -21,12 +23,13 @@ while True:
                 num_range["Fourth_set"].append(input_number)
                 continue
         elif input_number >= 41 and input_number <= 50:
-                num_range["Fifth.set"].append(input_number)
+                num_range["Fifth_set"].append(input_number)
                 continue
         else:
                 break
     except:
            print("Input Error")
 
+#new variable for each items inside the dictionary and then print
 for set_name, numbers in num_range.items():
     print(set_name + ":", *numbers, sep=", ")
